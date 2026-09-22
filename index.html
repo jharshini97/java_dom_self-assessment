@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SF Airbnb Listings</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>SF Airbnb Listings</h1>
+    <p class="subtitle">The first 50 San Francisco listings.</p>
+  </header>
+
+  <p id="status-message" class="status-message">Loading listings…</p>
+
+  <!-- script.js fills this container with one card per listing -->
+  <main id="listings-container" class="listings-grid"></main>
+
+  <footer class="site-footer">
+    <p>Data source: airbnb_sf_listings_500.json </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

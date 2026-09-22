@@ -4,8 +4,7 @@ A simple, static web page that loads San
 Francisco Airbnb listing data from a local JSON file and displays the
 first 50 listings as cards, using HTML, CSS, and JavaScript.
 
-**Live site:** _TODO — replace with your GitHub Pages link, e.g._
-`https://<your-username>.github.io/<repo-name>/`
+## Live site: https://jharshini97.github.io/java_dom_self-assessment/
 
 Each listing card shows:
 - Thumbnail photo

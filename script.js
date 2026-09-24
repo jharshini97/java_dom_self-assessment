@@ -1,3 +1,8 @@
+// Ken Yong: One improvement I would suggest is organizing the files into folders,
+// such as putting JavaScript files in a js folder and CSS files in a css folder.
+// The current structure works fine for this small project, but I think organizing
+// the files this way would make the project easier to manage as it grows.
+// Again, there is nothing wrong here, just a suggestions. :)
 const DATA_URL = "airbnb_sf_listings_500.json"; // path to JSON file
 const NUM_LISTINGS_TO_SHOW = 50;  // show first 50 listings
 
@@ -31,6 +36,7 @@ function truncate(text, maxLength) {
   return text.slice(0, maxLength).trim() + "…";
 }
 
+// Ken Yong: No big deal, I know you want to say "card" instead of "cated".
 // build a listing cated
 function createListingCard(listing) {
   const amenities = parseAmenities(listing.amenities);
@@ -84,6 +90,8 @@ function createListingCard(listing) {
   return card;
 }
 
+// Ken Yong: Nice use of DocumentFragment here to build the listing cards
+// before adding them to the listings container.
 /** Renders an array of listing objects into the page. */
 function renderListings(listings) {
   // Using a DocumentFragment so we only touch the real DOM once
@@ -94,6 +102,9 @@ function renderListings(listings) {
   listingsContainer.appendChild(fragment);
 }
 
+// Ken Yong: Good job using async and await with fetch here. I also like that you
+// check response.ok and provide an error message if loading the JSON fails.
+// This reminds me that I need to add try/catch on my next development!
 /** Fetch the JSON file and kick off rendering, using async/await. */
 async function loadListings() {
   try {

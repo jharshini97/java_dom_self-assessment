@@ -21,3 +21,7 @@ any card where the host data marks them as a Superhost.
 
 `airbnb_sf_listings_500.json` contains San Francisco Airbnb listing data (based on
 publicly available Inside Airbnb-style data) provided for this assignment.
+
+<!-- Ken Yong: Good job on the README! It clearly explains what the project does
+and what information is displayed for each listing. I also like that you included
+the live site link and explained the Superhost badge as your creative addition. -->

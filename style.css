@@ -36,6 +36,10 @@ body {
   color: #555;
 }
 
+/* Ken Yong: I really like how you use CSS Grid with auto-fill and minmax here.
+I didn't know we could make the number of columns adjust automatically based on
+the available space without using media queries. I learned something new from
+your CSS! */
 .listings-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -55,6 +59,9 @@ body {
   flex-direction: column;
 }
 
+/* Ken Yong: I noticed on your live page that all the listing images have the
+same size even though the original images are different. Nice use of a fixed
+height with object-fit: cover to keep the cards looking consistent. */
 /* Thumbnail image */
 .card-thumbnail {
   width: 100%;
